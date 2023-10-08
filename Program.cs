@@ -11,8 +11,10 @@
 
 Console.Clear();
 // Формируем массив из строк
-//string[] stringArray = { "1234", "1567", "1", "computer science", "97", "7" };
-string[] stringArray = {"Russia", "Denmark", "Kazan"};
+//string[] stringArray = { "1234", "1567", "-2", "computer science"};
+//string[] stringArray = {"Russia", "Denmark", "Kazan"};
+string[] stringArray = {"Hello", "2", "world", ":-)"};
+
 strArrNew(stringArray);
 printArray(strArrNew(stringArray));
 
@@ -24,7 +26,7 @@ void printArray(string[] stringArray)
     Console.Write("[");
     for (int i = 0; i < stringArray.Length; i++)
     {
-        Console.Write($"{stringArray[i]}");
+        Console.Write($"”{stringArray[i]}”");
         if (i != stringArray.Length - 1) Console.Write(",");
     }
     Console.Write("]");
